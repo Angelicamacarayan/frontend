@@ -11,25 +11,28 @@
       content="default-src 'self'; script-src 'self'"
     />
     <title>Third-person Converter App</title>
+    <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
 
-    <h1>Third-person Converter</h1>
-  <div>
+   
+  <div class="container bg-info bg-opacity-25 border border-info  p-5 mt-2">
+    <h1 class="text-center">Third-person Converter</h1>
 
-    <form id="form_sentenece">
-      <label for="sentence">First-person Pov:</label><br>
-      <textarea name="sentence" rows="4"></textarea><br>
-      <input type="submit" value="submit"><br>
+    <form class="" id="form_sentence">
+      <label class="form-label" for="sentence">First-person Pov:</label>
+      <textarea class="form-control mb-3" name="sentence" rows="4"></textarea>
+      <input class="btn btn-primary mb-3" type="Submit" value="Submit">
     </form>
-    <br>
-    <div>
-      <label for="sentence_corrected"> Third-person Pov:</label><br>
-      <textarea id="sentence_corrected" rows="4" readonly></textarea>
+
+    <div class="mt-3">
+      <label class="form-label" for="corrected_sentence"> Third-person Pov:</label>
+      <textarea class="form-control" id="corrected_sentence" rows="4" readonly></textarea>
     </div>
 
   </div>
 
+  <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
   </body>
     <script src="./js/renderer.js"></script>
    
